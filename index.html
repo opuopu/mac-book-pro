@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/mac.png" type="image/x-icon">
+    <title>Macbook pro</title>
+</head>
+<body>
+    <head>
+    </head>
+<main>
+    <section class="container">
+
+        <div class="d-flex  justify-content-around align-items-center ">
+            <div class="img-flui">
+                <img class="macs" src="images/mac.png" alt="">
+            </div>
+            <div class="ms-5">
+    <div >
+    <h1>Customize your Blue 24 inch imac with apple m1 chip</h1>
+    <p>apple m1 chip 8-core cpu with 4 performance cores and efficiency core.7-core gpu,and 16-core neural engine 8gb undified memory 256 gb ssd storage tow Thunderbolt/Usb Magic Mouse magic keyboard -us English</p>
+    </div>
+<!-- memory part --> 
+    <div class="">
+        <p class="m-1 ">Memory</p>
+        <button id="btn-memory-1" class="me-2" onclick="memoryfield(0)">8gb unified memory</button>
+        <button id="btn-memory-2" onclick="memoryfield(180)">16 gb unified memory</button>
+    </div>
+
+<!-- stroage part -->
+    <div class="my-5" >
+        <p class="m-1">stroage</p>
+        <button id="btn-ssd-1 " onclick="stroageammount(0)">256gb ssd stroage</button>
+        <button id="btn-ssd-2 " class="mx-2" onclick="stroageammount(100)">512gb ssd stroage</button>
+        <button id="btn-ssd-3" onclick="stroageammount(180)">1TB ssd stroage</button>
+        
+    </div>
+
+    <!-- delivery part -->
+
+    <div  >
+        <p class=" m-1">choose your delivery option</p>
+        <button id="btn-freeship" class="me-2" onclick="delivery(0)">friday aug-25/free delivery</button>
+        <button id="btn-ship-charge" onclick="delivery(20)">friday aug-21 delivery charge $120</button>
+
+    </div>
+
+    <!-- calculate price section -->
+<div class="row mt-5">
+    <div class="col col-lg-6">
+        <table class="table">
+            <thead>
+              <tr>
+               
+                <td scope="col" class="fw-bold">Best price</td>
+                <td scope="col" class="fw-bold">$<span id="price">1299</span></td>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+               
+                <td>extra memory cost</td>
+                <td>$<span id="memory-cost">0</span></td>
+            
+              </tr>
+              <tr>
+                
+                <td>extra stroage cost</td>
+                <td>$<span id="stroage-cost">0</span></td>
+                
+              </tr>
+              <tr>
+              
+                <td>Delivery charge</td>
+                <td>$<span id="delivery-fee">0</span></td>
+                
+              </tr>
+              <tr>
+              
+                <th>total</th>
+                <th>$<span id="total-price">1299</span></th>
+              </tr>
+
+            </tbody>
+          </table>
+          <div>
+              <p class="m-1">apply promo code</p>
+              <input type="text"  class="rounded" id="input-code">
+              <button id="apply-promo" class=" rounded text-white py-1 px-2 bg-danger" onclick="discountCode()">apply</button>
+          </div>
+    </div>
+
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer and last total -->
+    <footer>
+<hr class="mx-5">
+        <h2 class="text-center mb-3"> total:$<span id="last-total">1299</span></h2>
+    </footer>
+
+</main>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- js linkup -->
+    <script src="script.js"></script>
+</body>
+</html>
